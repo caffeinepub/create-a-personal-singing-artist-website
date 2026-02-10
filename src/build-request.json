@@ -1,53 +1,34 @@
 {
   "kind": "build_request",
-  "title": "Update artist site draft content for JensyPragya (bio, album, and YouTube video)",
+  "title": "Add uploaded photo to the About section",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-1",
-      "text": "Replace the placeholder artist identity content with JensyPragya details across the site by updating the central content source (frontend/src/content/artistContent.ts) to reflect: JensyPragya (name), singer and songwriter, emerging pop/kpop artist, currently living in New Delhi, and upcoming album title \"Don't Care\". Ensure all displayed copy remains in English.",
+      "id": "REQ-3",
+      "text": "Add the uploaded image file (IMG_20251223_133615~2-6.jpg) to the frontend static assets under frontend/public/assets/uploads/, and update the About section image to use this new file so it renders in the About section on the home page.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-20"
+          "msg-4"
         ],
         "quotes": [
-          "Create my draft , Jensypragya is a singer and songwriter and emerging as a pop/kpop artist and currently living in New delhi and her upcoming album is don't care ."
+          "Add this photo in section"
         ]
       },
       "acceptanceCriteria": [
-        "Home hero/headers/footers display the artist name as \"JensyPragya\" (matching the requested casing).",
-        "About/Biography text mentions she is a singer and songwriter, emerging as a pop/kpop artist, based in New Delhi, and references the upcoming album \"Don't Care\".",
-        "No remaining visible placeholder identity text for \"Aria Sterling\" remains in the UI."
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "text": "Update the Videos section content to include the user-provided YouTube video link by configuring artistContent.videos to embed the YouTube video with ID \"X6QUk9-Qw1c\" and set the artist YouTube social link to the exact provided URL https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-20"
-        ],
-        "quotes": [
-          "And YouTube  name is JensyPragya and link is https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA"
-        ]
-      },
-      "acceptanceCriteria": [
-        "The Videos section renders an embedded YouTube player for video ID \"X6QUk9-Qw1c\".",
-        "The \"View All Videos on YouTube\" button links to https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA (exactly).",
-        "The YouTube social icon link in the header/footer links to https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA (exactly)."
+        "The file IMG_20251223_133615~2-6.jpg exists at frontend/public/assets/uploads/IMG_20251223_133615~2-6.jpg.",
+        "frontend/src/components/sections/AboutSection.tsx uses src=\"/assets/uploads/IMG_20251223_133615~2-6.jpg\" for the About section <img>.",
+        "The About section on the home page displays the new uploaded photo without broken-image icons in both desktop and mobile layouts.",
+        "The <img> has an English alt attribute describing the image (no empty alt)."
       ]
     }
   ],
   "constraints": [
-    "Use English for any user-facing text.",
-    "Do not modify files under frontend/src/components/ui or any paths listed as immutable in SYSTEM_CONTEXT.",
-    "Keep the backend as a single Motoko actor in backend/main.mo; do not introduce additional backend canisters/services."
+    "Do not modify any files under frontend/src/components/ui or any paths listed as immutable in SYSTEM_CONTEXT."
   ],
   "nonGoals": [
-    "Purchasing, provisioning, or providing a free custom domain name (e.g., jensypragya.com) is out of scope.",
-    "Adding third-party authentication providers (anything beyond Internet Identity) is out of scope."
+    "Do not add new pages, routes, or backend storage for images.",
+    "Do not implement image upload functionality; only add the already-uploaded file as a static asset and reference it."
   ],
   "imageRequirements": {
     "required": [],

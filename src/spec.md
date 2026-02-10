@@ -1,10 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Update the artist site draft content to reflect JensyPragya’s identity and include the provided YouTube video/link.
+**Goal:** Display the newly uploaded photo in the About section on the home page.
 
 **Planned changes:**
-- Update the central artist content source (`frontend/src/content/artistContent.ts`) to replace placeholder identity content with: JensyPragya (name), singer and songwriter, emerging pop/kpop artist, currently living in New Delhi, and upcoming album “Don't Care” (English copy throughout).
-- Configure the Videos section content to embed the YouTube video with ID `X6QUk9-Qw1c` and set the YouTube social/link target to `https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA` (exactly).
+- Add `IMG_20251223_133615~2-6.jpg` to `frontend/public/assets/uploads/`.
+- Update `frontend/src/components/sections/AboutSection.tsx` to reference `/assets/uploads/IMG_20251223_133615~2-6.jpg` for the About section image and ensure it has a non-empty English alt attribute.
 
-**User-visible outcome:** The site displays JensyPragya’s name and updated bio/album details instead of placeholder content, and the Videos section (and YouTube links in header/footer) correctly show and link to the provided YouTube video.
+**User-visible outcome:** The About section on the home page shows the new uploaded photo correctly on both desktop and mobile without broken-image icons.

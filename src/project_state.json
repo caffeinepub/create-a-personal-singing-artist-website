@@ -1,28 +1,16 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "Artist promotional website draft for singer/songwriter JensyPragya (pop/kpop) including bio, location, upcoming album, and YouTube link.",
-  "architectural_notes": [
-    "Site content should include: artist name JensyPragya, singer/songwriter, emerging pop/kpop artist, based in New Delhi, upcoming album \"Don't Care\", and a YouTube presence (name JensyPragya + link)."
-  ],
-  "known_issues": [
-    "Domain slug/name validation error encountered: \"create-a-personal-singing-(artist)-website\" invalid (must be 5–50 chars, only letters/numbers/hyphens)."
-  ],
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
   "isFixRequest": false,
   "existing_features": [
     {
-      "id": "feature-replace-the-placeholder-artist-identity-content-with-jensypragya-details-across-the-site-by-updating-the-central-content-source-frontend-src-content-artistcontent-ts-to-reflect-jensypragya-name-singer-and-songwriter-emerging-pop-kpop-artist-currently-living-in-new-delhi-and-upcoming-album-title-don-t-care-ensure-all-displayed-copy-remains-in-english",
-      "title": "Replace the placeholder artist identity content with JensyPragya details across the site by updating the central content source (frontend/src/content/artistContent.ts) to reflect: JensyPragya (name), singer and songwriter, emerging pop/kpop artist, currently living in New Delhi, and upcoming album title \"Don't Care\". Ensure all displayed copy remains in English.",
+      "id": "feature-add-the-uploaded-image-file-img-20251223-133615-2-6-jpg-to-the-frontend-static-assets-under-frontend-public-assets-uploads-and-update-the-about-section-image-to-use-this-new-file-so-it-renders-in-the-about-section-on-the-home-page",
+      "title": "Add the uploaded image file (IMG_20251223_133615~2-6.jpg) to the frontend static assets under frontend/public/assets/uploads/, and update the About section image to use this new file so it renders in the About section on the home page.",
       "reqIds": [
-        "REQ-1"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-the-videos-section-content-to-include-the-user-provided-youtube-video-link-by-configuring-artistcontent-videos-to-embed-the-youtube-video-with-id-x6quk9-qw1c-and-set-the-artist-youtube-social-link-to-the-exact-provided-url-https-youtu-be-x6quk9-qw1c-si-h4fpm3omcmsqqisa",
-      "title": "Update the Videos section content to include the user-provided YouTube video link by configuring artistContent.videos to embed the YouTube video with ID \"X6QUk9-Qw1c\" and set the artist YouTube social link to the exact provided URL https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA.",
-      "reqIds": [
-        "REQ-2"
+        "REQ-3"
       ],
       "version": 1
     }
@@ -30,25 +18,12 @@
   "new_feature_requests": [
     {
       "id": "AR-1",
-      "summary": "Create a draft personal artist website for JensyPragya (singer/songwriter, pop/kpop) including bio, New Delhi location, upcoming album \"Don't Care\", and YouTube channel/link https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-2",
-      "summary": "Support connecting/using a custom domain (user requested free \"Jensypragya\" domain; may require guidance to obtain domain or use free subdomain)",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-3",
-      "summary": "Provide guidance to get the site indexed on Google (Google Search Console submission/verification constraints)",
+      "summary": "Add the provided photo into the specified section of the app/page",
       "reqIds": [],
       "status": "pending"
     }
   ],
-  "gameProjectType": "none",
-  "projectName": "JensyPragya",
+  "projectName": "Add uploaded photo to the About section",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }

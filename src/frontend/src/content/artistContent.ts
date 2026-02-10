@@ -1,7 +1,7 @@
 export const artistContent = {
   name: "JensyPragya",
   tagline: "Emerging Pop/K-pop Artist",
-  bio: `JensyPragya is a singer and songwriter emerging as a pop/K-pop artist. Currently based in New Delhi, she brings a fresh and vibrant energy to the music scene with her unique style and passionate performances.
+  bio: `JensyPragya is a singer and songwriter emerging as a Pop/K-pop artist. Currently based in New Delhi, she brings a fresh and vibrant energy to the music scene with her unique style and passionate performances.
 
 Her upcoming album "Don't Care" showcases her artistic evolution and bold creative vision. With a growing fanbase and distinctive sound, JensyPragya is making her mark in the contemporary pop landscape, blending catchy melodies with heartfelt lyrics that resonate with listeners around the world.
 
@@ -9,9 +9,9 @@ Follow her journey as she continues to create music that inspires and connects w
   
   biography: {
     title: "The Journey of a Voice",
-    narrative: `JensyPragya is a singer and songwriter emerging as a dynamic force in the pop and K-pop music scene. Currently living in New Delhi, she represents a new generation of artists who blend global pop influences with their own unique artistic vision.
+    narrative: `JensyPragya is a singer and songwriter emerging as a dynamic force in the Pop and K-pop music scene. Currently living in New Delhi, she represents a new generation of artists who blend global pop influences with their own unique artistic vision.
 
-From an early age, JensyPragya was drawn to music, finding inspiration in the vibrant sounds of pop and K-pop that dominated the airwaves. She began writing her own songs as a teenager, crafting melodies and lyrics that expressed her experiences, dreams, and emotions. Her passion for music grew stronger with each passing year, driving her to pursue her artistic ambitions with unwavering determination.
+From an early age, JensyPragya was drawn to music, finding inspiration in the vibrant sounds of Pop and K-pop that dominated the airwaves. She began writing her own songs as a teenager, crafting melodies and lyrics that expressed her experiences, dreams, and emotions. Her passion for music grew stronger with each passing year, driving her to pursue her artistic ambitions with unwavering determination.
 
 As an emerging artist, JensyPragya has been working tirelessly to develop her craft and connect with audiences. Her music combines catchy pop hooks with the polished production and performance style that defines K-pop, creating a sound that is both contemporary and distinctly her own. She draws inspiration from her surroundings in New Delhi, infusing her work with the energy and diversity of the city.
 
@@ -24,7 +24,7 @@ As she continues to grow as an artist, JensyPragya remains committed to creating
       {
         year: "2024",
         title: "Musical Beginnings",
-        description: "Started creating and sharing original music, building a foundation as an emerging pop/K-pop artist."
+        description: "Started creating and sharing original music, building a foundation as an emerging Pop/K-pop artist."
       },
       {
         year: "2025",
@@ -33,8 +33,8 @@ As she continues to grow as an artist, JensyPragya remains committed to creating
       },
       {
         year: "2026",
-        title: "Don't Care Album",
-        description: "Preparing to release debut album 'Don't Care,' marking a major milestone in her artistic journey."
+        title: "\"Don't Care\" Album",
+        description: "Preparing to release debut album \"Don't Care,\" marking a major milestone in her artistic journey."
       }
     ]
   },

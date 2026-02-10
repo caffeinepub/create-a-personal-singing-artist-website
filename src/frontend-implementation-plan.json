@@ -1,42 +1,27 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Update artist site draft content for JensyPragya (bio, album, and YouTube video)",
+  "title": "Add uploaded photo asset to About section",
   "requirements": [
     {
-      "id": "REQ-1",
-      "summary": "Replace placeholder artist identity copy across the site by updating the central artist content source to JensyPragya details (English only).",
+      "id": "REQ-3",
+      "summary": "Add the provided uploaded image to static assets and update the About section image to reference it with an English alt text.",
       "acceptanceCriteria": [
-        "Home hero/headers/footers display the artist name as \"JensyPragya\" (matching the requested casing).",
-        "About/Biography text mentions she is a singer and songwriter, emerging as a pop/kpop artist, based in New Delhi, and references the upcoming album \"Don't Care\".",
-        "No remaining visible placeholder identity text for \"Aria Sterling\" remains in the UI."
+        "The file IMG_20251223_133615~2-6.jpg exists at frontend/public/assets/uploads/IMG_20251223_133615~2-6.jpg.",
+        "frontend/src/components/sections/AboutSection.tsx uses src=\"/assets/uploads/IMG_20251223_133615~2-6.jpg\" for the About section <img>.",
+        "The About section on the home page displays the new uploaded photo without broken-image icons in both desktop and mobile layouts.",
+        "The <img> has an English alt attribute describing the image (no empty alt)."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/content/artistContent.ts",
-          "operation": "modify",
-          "description": "Update artistContent identity fields to JensyPragya, ensuring all user-facing copy is English and includes: singer and songwriter, emerging pop/kpop artist, currently living in New Delhi, and upcoming album title \"Don't Care\". Also remove/replace any remaining placeholder identity references (e.g., name, tagline, bio, biography narrative/milestones, and any album mentions) so no \"Aria Sterling\" copy remains visible."
+          "path": "frontend/public/assets/uploads/IMG_20251223_133615~2-6.jpg",
+          "operation": "create",
+          "description": "Add the uploaded image file as a static asset at the required path so it can be referenced by the About section."
         },
         {
-          "path": "frontend/src/components/navigation/SiteFooter.tsx",
+          "path": "frontend/src/components/sections/AboutSection.tsx",
           "operation": "modify",
-          "description": "Remove the hardcoded placeholder fallback hostname value (currently \"aria-sterling-music\") used for the caffeine.ai tracking identifier, replacing it with a JensyPragya-appropriate non-placeholder fallback to avoid lingering placeholder identity text."
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Update site video and YouTube social link configuration to embed the provided YouTube video and link to the exact provided URL.",
-      "acceptanceCriteria": [
-        "The Videos section renders an embedded YouTube player for video ID \"X6QUk9-Qw1c\".",
-        "The \"View All Videos on YouTube\" button links to https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA (exactly).",
-        "The YouTube social icon link in the header/footer links to https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA (exactly)."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/content/artistContent.ts",
-          "operation": "modify",
-          "description": "Set artistContent.videos to include an entry embedding YouTube video ID \"X6QUk9-Qw1c\". Update artistContent.social.youtube to the exact URL https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA so the Videos CTA and header/footer YouTube icon link to it."
+          "description": "Update the About section <img> to use src=\"/assets/uploads/IMG_20251223_133615~2-6.jpg\" and set a non-empty English alt attribute describing the photo."
         }
       ]
     }
