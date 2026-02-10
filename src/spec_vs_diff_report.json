@@ -1,0 +1,37 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-10T17:16:28.249Z",
+  "summary": "REQ-1 and REQ-2 appear to be implemented via updates to the central content source (artistContent) including JensyPragya identity/bio and the exact YouTube URL, and the footer consumes the YouTube link from artistContent.social.youtube. The diff also introduces additional navigation/attribution behavior in the footer and updates project_state tracking that were not requested.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Footer “smart navigation” behavior (section scrolling vs navigating to home, plus a dedicated /listen navigation handler) beyond the requested content updates.",
+      "reason": "BuildRequest only asked to update draft content (artist identity + YouTube video/link) via the central content source; it did not request new navigation logic.",
+      "evidence": [
+        "frontend/src/components/navigation/SiteFooter.tsx"
+      ]
+    },
+    {
+      "description": "Caffeine.ai attribution with UTM tracking and computed appIdentifier/fallback hostname logic in the footer.",
+      "reason": "Not requested by REQ-1/REQ-2; unrelated to updating artist bio/video content.",
+      "evidence": [
+        "frontend/src/components/navigation/SiteFooter.tsx"
+      ]
+    },
+    {
+      "description": "Updates to project tracking state (new_feature_requests statuses, known issues, etc.) in project_state.json.",
+      "reason": "BuildRequest does not mention altering internal project metadata/state files.",
+      "evidence": [
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/navigation/SiteFooter.tsx",
+    "frontend/src/content/artistContent.ts",
+    "project_state.json"
+  ]
+}

@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Warm, elegant palette - Charcoal, Ivory, Gold, Crimson */
+        --background: 0.98 0.005 60;
+        --foreground: 0.20 0.015 30;
+        --card: 1 0 0;
+        --card-foreground: 0.20 0.015 30;
+        --popover: 1 0 0;
+        --popover-foreground: 0.20 0.015 30;
+        --primary: 0.25 0.02 30;
+        --primary-foreground: 0.98 0.005 60;
+        --secondary: 0.95 0.01 50;
+        --secondary-foreground: 0.25 0.02 30;
+        --muted: 0.95 0.01 50;
+        --muted-foreground: 0.50 0.01 30;
+        --accent: 0.92 0.015 45;
+        --accent-foreground: 0.25 0.02 30;
+        --destructive: 0.55 0.20 25;
+        --destructive-foreground: 0.98 0.005 60;
+        --border: 0.90 0.01 40;
+        --input: 0.90 0.01 40;
+        --ring: 0.65 0.15 50;
+        
+        /* Brand colors */
+        --brand-gold: 0.70 0.15 65;
+        --brand-crimson: 0.50 0.20 25;
+        --brand-charcoal: 0.25 0.02 30;
+        --brand-ivory: 0.98 0.005 60;
+        
+        --chart-1: 0.70 0.15 65;
+        --chart-2: 0.50 0.20 25;
+        --chart-3: 0.60 0.10 45;
+        --chart-4: 0.75 0.12 55;
+        --chart-5: 0.55 0.18 35;
+    }
+
+    .dark {
+        --background: 0.18 0.015 30;
+        --foreground: 0.95 0.01 50;
+        --card: 0.22 0.02 30;
+        --card-foreground: 0.95 0.01 50;
+        --popover: 0.20 0.015 30;
+        --popover-foreground: 0.95 0.01 50;
+        --primary: 0.70 0.15 65;
+        --primary-foreground: 0.20 0.015 30;
+        --secondary: 0.30 0.02 35;
+        --secondary-foreground: 0.95 0.01 50;
+        --muted: 0.30 0.02 35;
+        --muted-foreground: 0.65 0.01 40;
+        --accent: 0.35 0.03 40;
+        --accent-foreground: 0.95 0.01 50;
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.95 0.01 50;
+        --border: 0.30 0.02 35;
+        --input: 0.30 0.02 35;
+        --ring: 0.70 0.15 65;
+        
+        /* Brand colors for dark mode */
+        --brand-gold: 0.75 0.18 60;
+        --brand-crimson: 0.55 0.22 25;
+        --brand-charcoal: 0.20 0.015 30;
+        --brand-ivory: 0.95 0.01 50;
+        
+        --chart-1: 0.75 0.18 60;
+        --chart-2: 0.55 0.22 25;
+        --chart-3: 0.65 0.12 45;
+        --chart-4: 0.80 0.15 55;
+        --chart-5: 0.60 0.20 35;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        background-image: url('/assets/generated/site-texture-tile.dim_512x512.png');
+        background-repeat: repeat;
+        background-size: 256px 256px;
+        background-blend-mode: overlay;
+        background-attachment: fixed;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', 'Georgia', serif;
+    }
+}
+
+@layer utilities {
+    .font-serif {
+        font-family: 'Playfair Display', 'Georgia', serif;
+    }
+}

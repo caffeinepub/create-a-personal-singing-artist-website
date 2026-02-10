@@ -1,0 +1,20 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup using standard Outlet pattern for stable routing, defining routes for home page and /listen page wrapped in shared layout with header and footer.",
+  "frontend/src/content/artistContent.ts": "Centralized configuration module containing all artist content for JensyPragya including name, tagline, bio about being an emerging pop/K-pop artist in New Delhi, biography with narrative and milestones, social links with YouTube URL, music tracks from \"Don't Care\" album, listenTracks array with embed URLs, videos with YouTube ID X6QUk9-Qw1c, and show listings.",
+  "frontend/src/components/navigation/SiteHeader.tsx": "Responsive header component with logo, navigation menu including Listen page link (desktop and mobile), social media links, and smart navigation that handles both section scrolling on home page and page navigation to /listen route.",
+  "frontend/src/components/navigation/SiteFooter.tsx": "Footer component displaying artist branding, quick navigation links including Listen page, social media icons, copyright notice, and Caffeine.ai attribution with UTM tracking using jensypragya-music fallback identifier and smart navigation handling.",
+  "frontend/src/components/sections/HeroSection.tsx": "Full-screen hero section with background image, artist name, tagline, call-to-action buttons, and animated scroll indicator.",
+  "frontend/src/components/sections/AboutSection.tsx": "About section displaying the artist's biography in a clean, readable layout with proper typography and spacing.",
+  "frontend/src/components/sections/MusicSection.tsx": "Music section showcasing track listings with album information, duration, external Spotify links, prominent call-to-action card linking to the Listen page with embedded players, and full discography button.",
+  "frontend/src/components/sections/VideosSection.tsx": "Videos section with responsive grid layout displaying embedded YouTube videos with titles and hover effects.",
+  "frontend/src/components/sections/ShowsSection.tsx": "Shows section displaying upcoming performances with ticket links and past shows, formatted with dates, venues, and locations.",
+  "frontend/src/components/sections/ContactSection.tsx": "Contact section wrapper that introduces the contact form with heading and descriptive text.",
+  "frontend/src/components/sections/SectionChrome.tsx": "Reusable wrapper component for consistent section styling and layout across all page sections.",
+  "frontend/src/components/contact/ContactForm.tsx": "Contact form component with actor-ready state checking, validation, submission handling via backend mutation, comprehensive loading/error/success states, and disabled inputs until backend connection is established for reliable guest submissions.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for backend interactions with improved error handling and user-friendly error messages for contact message submission mutation.",
+  "frontend/src/index.css": "Global styles with warm OKLCH color system (charcoal, ivory, gold, crimson), custom font families (Inter and Playfair Display), and subtle texture background.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with brand color tokens (gold, crimson, charcoal, ivory), custom font families, and design system utilities.",
+  "frontend/src/components/sections/BiographySection.tsx": "Biography section component displaying a comprehensive narrative of the artist's journey and a visual timeline of career milestones, rendered exclusively from artistContent configuration.",
+  "frontend/src/pages/ListenPage.tsx": "Dedicated Listen page component displaying a list of tracks with embedded Spotify players, back navigation, descriptive header, and call-to-action to open full Spotify profile.",
+  "frontend/DEPLOYMENT.md": "Comprehensive deployment runbook covering local testing, mainnet deployment, post-deployment verification steps for routes and guest contact form, troubleshooting guide, and monitoring instructions."
+}

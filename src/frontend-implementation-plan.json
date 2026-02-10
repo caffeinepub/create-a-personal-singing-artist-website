@@ -1,0 +1,44 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update artist site draft content for JensyPragya (bio, album, and YouTube video)",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Replace placeholder artist identity copy across the site by updating the central artist content source to JensyPragya details (English only).",
+      "acceptanceCriteria": [
+        "Home hero/headers/footers display the artist name as \"JensyPragya\" (matching the requested casing).",
+        "About/Biography text mentions she is a singer and songwriter, emerging as a pop/kpop artist, based in New Delhi, and references the upcoming album \"Don't Care\".",
+        "No remaining visible placeholder identity text for \"Aria Sterling\" remains in the UI."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/content/artistContent.ts",
+          "operation": "modify",
+          "description": "Update artistContent identity fields to JensyPragya, ensuring all user-facing copy is English and includes: singer and songwriter, emerging pop/kpop artist, currently living in New Delhi, and upcoming album title \"Don't Care\". Also remove/replace any remaining placeholder identity references (e.g., name, tagline, bio, biography narrative/milestones, and any album mentions) so no \"Aria Sterling\" copy remains visible."
+        },
+        {
+          "path": "frontend/src/components/navigation/SiteFooter.tsx",
+          "operation": "modify",
+          "description": "Remove the hardcoded placeholder fallback hostname value (currently \"aria-sterling-music\") used for the caffeine.ai tracking identifier, replacing it with a JensyPragya-appropriate non-placeholder fallback to avoid lingering placeholder identity text."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Update site video and YouTube social link configuration to embed the provided YouTube video and link to the exact provided URL.",
+      "acceptanceCriteria": [
+        "The Videos section renders an embedded YouTube player for video ID \"X6QUk9-Qw1c\".",
+        "The \"View All Videos on YouTube\" button links to https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA (exactly).",
+        "The YouTube social icon link in the header/footer links to https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA (exactly)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/content/artistContent.ts",
+          "operation": "modify",
+          "description": "Set artistContent.videos to include an entry embedding YouTube video ID \"X6QUk9-Qw1c\". Update artistContent.social.youtube to the exact URL https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA so the Videos CTA and header/footer YouTube icon link to it."
+        }
+      ]
+    }
+  ]
+}

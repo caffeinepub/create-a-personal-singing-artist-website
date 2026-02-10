@@ -1,0 +1,44 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-replace-the-placeholder-artist-identity-content-with-jensypragya-details-across-the-site-by-updating-the-central-content-source-frontend-src-content-artistcontent-ts-to-reflect-jensypragya-name-singer-and-songwriter-emerging-pop-kpop-artist-currently-living-in-new-delhi-and-upcoming-album-title-don-t-care-ensure-all-displayed-copy-remains-in-english",
+      "featureTitle": "Replace the placeholder artist identity content with JensyPragya details across the site by updating the central content source (frontend/src/content/artistContent.ts) to reflect: JensyPragya (name), singer and songwriter, emerging pop/kpop artist, currently living in New Delhi, and upcoming album title \"Don't Care\". Ensure all displayed copy remains in English.",
+      "files": [
+        "frontend/src/components/navigation/SiteFooter.tsx",
+        "frontend/src/content/artistContent.ts"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-videos-section-content-to-include-the-user-provided-youtube-video-link-by-configuring-artistcontent-videos-to-embed-the-youtube-video-with-id-x6quk9-qw1c-and-set-the-artist-youtube-social-link-to-the-exact-provided-url-https-youtu-be-x6quk9-qw1c-si-h4fpm3omcmsqqisa",
+      "featureTitle": "Update the Videos section content to include the user-provided YouTube video link by configuring artistContent.videos to embed the YouTube video with ID \"X6QUk9-Qw1c\" and set the artist YouTube social link to the exact provided URL https://youtu.be/X6QUk9-Qw1c?si=h4FpM3omCMSQQiSA.",
+      "files": [
+        "frontend/src/content/artistContent.ts"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
